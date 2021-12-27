@@ -1,0 +1,131 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: black;
+  margin: 3rem;
+}
+
+button {
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: #f15a22;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: rgba(255, 130, 68, 0.7);
+}
+
+.flashcontainer {
+  width: 95%;
+  margin: auto;
+
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.nav h1 {
+  margin-left: 1.5rem;
+}
+
+.flashcontainer-box {
+  /* border: 1px solid red; */
+  width: 40rem;
+  margin: 10rem auto;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(255, 130, 68, 0.9);
+}
+
+.flashcontainer-box textarea {
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid #389ab4;
+  outline: none;
+}
+
+.flashcards {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 10px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.flashcard {
+  width: 37rem;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 1rem auto;
+  background-color: white;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(255, 130, 68, 0.9);
+}
+
+.flashcard h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .flashcards {
+    margin: auto;
+  }
+
+  .flashcards {
+    margin: auto;
+  }
+
+  .flashcards {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flashcontainer-box {
+    width: 100%;
+  }
+
+  .flashcard {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 76.8rem) {
+  .flashcard {
+    margin-left: 24rem;
+  }
+} */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="flashcontainer">
+        <div class="nav">
+          <h1>FlashCards</h1>
+          <div class="game">
+            <button class="addnew">ADD NEW CARD</button>
+            <button class="del">DELETE ALL CARDS</button>
+            <button class="play">PLAY</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="flashcontainer">
+      <div class="flashcontainer-box">
+        <h2>CREATE NEW CARD</h2>
+        <label class="word" for="word">Word</label>
+        <textarea id="word"></textarea>
+        <br />
+        <label class="meaning" for="meaning">Meaning</label>
+        <textarea id="meaning"></textarea> <br />
+        <div>
+          <button class="addcard">ADD CARD</button>
+          <button class="cancel">CANCEL</button>
+        </div>
+      </div>
+    </div>
+    <div class="flashcards"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
